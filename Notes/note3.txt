@@ -1,0 +1,50 @@
+Arduino 3: Interfacing with Analog Devices
+ 
+
+A. Analog Inputs
+1. What are analog devices?
+2. Understanding analog-to-digital converters
+3. Exploring our temperature sensor (TMP37)
+4. Understanding how to interpret the sensor values  
+5. Interpreting the sensor values
+6. Wiring up the temperature sensor 
+7. Coding to read the temperature sensor 
+8. LDR (light-dependent resistor) sensor 
+9. Using a voltage  divider with our LDR 
+10. Wiring up our LDR circuit 
+11. Coding to read the LDR circuit 
+12. Joystick module  
+13. Wiring up our joystick  
+14. Coding the joystick circuit 
+
+
+B. Analog Outputs
+1. How Arduino generates analog output
+2. Understanding pulse-width modulation (PWM)
+3. Understanding the analogWrite function with PWM
+4. Wire up an LED 
+5. Write code to use PWM with the LED 
+6. Understanding the map() function  
+7. Wiring a potentionmeter to control LED  
+8. Coding to control the LED with a potentionmeter
+
+
+C. Interfacing with a Stepper Motor 
+1. Stepper motor introduction  
+2. Unipolar stepper motors 
+3. Stepper motor driver board ULN2003
+4. Wiring a stepper motor to Arduino
+5. Coding to control the motor directly 
+6. Exploring the Stepper Library 
+7. Coding using the Stepper() function 
+
+D. Projects
+1. Using the joystick to control LEDs 
+2. Wiring up the joystick and LEDs  
+3. Coding for the joystick and LEDs  
+4. Using LDR sensor to control a motor 
+5. Wiring
+6. Coding the LDR and sensor 
+7. Using the joystick to control motor
+8. Wiring up the joystick and motor 
+9. Coding for the joystick and motor  

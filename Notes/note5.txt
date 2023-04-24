@@ -1,0 +1,49 @@
+Arduino 5: Prototyping  
+ 
+
+A. Understand Prototyping
+1. Purpose and pitfalls of prototypes
+2. Prototype from factors
+3. Prototype from process
+
+B. Plan the Prototype
+1. Prototype planning considerations
+2. Demo product brief of handheld game 
+3. Define the proof-of-concept prototype 
+4. Select components and libraries
+5. Design the circuit 
+6. Make a pin map
+
+
+C. Your Prototype "Hello World" 
+1. Connect the display
+2. Display "Hello World" sketch
+3. Controlling the display 
+
+
+D. Animate the Display  
+1. Understand display dynamics
+2. Implement display dynamics
+3. Modify the animation
+
+E. Add Interaction 
+1. Understand interaction logic
+2. Breadboard buttons and update pin map 
+3. Implement buttons
+4. Name
+
+F. Improve Responsiveness 
+1. Blocking versus non-blocking code 
+2. Understand timers
+3. Implement non-blocking interaction
+
+G. Advanced Interaction
+1. Button debouncing 
+2. Advanced button interaction
+3. Implement button functions
+4. Game intro
+
+H. Iterating your Prototype 
+1. Use symbolic parameters
+2. Document prototypes
+3. Complete the experience

@@ -1,0 +1,101 @@
+Arduino 2: Interfacing with Hardware 
+
+
+A. Interface with an LCD
+1. Introduction to the liquid crystal display (LCD)
+a. The principle behind the LCD is to energize a series
+of crystals to appear either opaque or transparent against
+a lighted background 
+b. 16 by 2 LCD
+- 2 rows
+- 16 columns
+c. Alphanumeric LCD 
+d. Graphical LCD 
+- The graphical LCD devices use a single larger grid of 
+individual lights to display information, instead of 
+a separate grid for each character.
+- Ability to display any character in any resolution
+
+2. Understanding HD4470 controller
+a. Used to manage LCD
+b. Dot matrix
+c. Each dot has a dimension of 5 columns and 8 rows 
+3. The LCD interface
+4. Wire up the LCD
+
+- Pin1: GND/VSS ground 
+- Pin2: VDD source(Power Supply Pin, +5V)
+- Pin3: V0 (Display Contrast)
+Adjust brightness 
+Adjusting power supply voltage for LCD 
+- PIN4: RS (Register Select) 
+Memory: 
+LOW(0) ==> Send Command
+HIGH(1) ==> Send Data
+- Pin5: RW (Read/Write) 
+LOW(0) ==> Write, can be connected to GND
+HIGH(1) ==> Read 
+- Pin6: E/EN(Enable) 
+Operation enable signal for read and write
+- Pin7-14: D0 - D7 (8 Digital Pins) 
+The states of these pins: HIGH or LOW
+- Pin15: BLA/A (Anode) 
+LED Backlight
+Connected to 5V
+- Pin16: BLK/A (Cathode) 
+LED Backlight
+Connected to GND
+
+- Potentiomenter connect to Pin3 
+
+5. Coding the LCD interface
+6. Optional review: Understanding "for" loops
+7. Optional review: Understanding arrays
+8. Displaying random numbers and scrolling 
+
+
+B. Interface with a 7-Segment LED 
+1. Overview of the 7-Segment LED
+2. The 7-Segment LED component 
+3. 7-Segment LED display types
+a. Common Anode
+- Common Voltage Source 
+- The individual LEDs are illuminated by connecting the 
+individual cathode terminals to LOW 
+b. Common Cathode
+- Common ground  
+- The individual LEDs are illuminated by connecting the 
+individual cathode terminals to HIGH 
+
+4. Checking a 7-Segment LED
+5. Wiring up the 7-Segment LED
+6. Cycle through each LED directly 
+7. Cycle through LEDs with a for loop 
+8. Understanding the 7-Segment LED truth table
+9. Coding 7-Segment display showing numbers
+
+C. Interface with a 7-Segment LED Using a Shift Register
+1. Understanding the shift register 
+a. 4-Bit Shift Register
+b. Serial in  
+c. Parallel out  
+e. 4 clock cycle 
+
+2. MC74HC595A shift register overview 
+3. Wire up the input and clock signals
+4. Wire up the signals for VCC and GND 
+5. Wire up the  7-Segment LED
+6. Initializing pins for the shift register
+7. The shiftOut command
+
+D. Interface with a Keypad
+1. Introduction to the keypad interface 
+2. Wiring up the keypad 
+3. Optional review: IF statement 
+4. Optional review: The switch... case statement
+5. Understanding two-dimentional arrays
+6. Setup the keypad library 
+7. HelloKeypad
+8. Using the keypad with LEDs 
+9. Combine the keypad and 7-segment LED  
+10. Combine them all: LCD + keypad + LED

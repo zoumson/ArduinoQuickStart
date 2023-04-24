@@ -1,0 +1,81 @@
+Arduino 1: The foundations
+
+
+A. Introduction to Arduino
+1. What is and Arduino
+2. The Arduino layout
+3. Digital interfaces
+4. Analog interfaces
+5. The power pins
+
+B. Creating an Arduino Program
+1. Download the Arduino software
+2. A tour of the Arduino IDE
+3. The setup() and loop() functions
+4. pinMode()
+5. digitalWrite()
+6. Creating your first sketch
+7. Serial Monitor
+8. Testing blink LED and Serial Monitor
+
+C. Interface with Output(LED)
+1. Light-emitting diodes (LEDs)
+a. Diode
+- Electrical component that only allows a current to flow in one direction
+- Anode: positive side, lead is longer
+- Cathode: negative side, lead is shorter 
+b. Current Limiting Resistor 
+- Used in a circuit to ensure that maximum current is not exceeded
+- Higher resistor values will further lower the current, reducing the brightness of the LED
+- Ohm's Law = V = I X R ==> R = V/I
+- Check Datasheet
+- Forward current: 
+•	Red LED value = 20 mA, 10 mA for safety
+•	Green LED value = 20 mA, 10 mA for safety
+•	Blue LED value = 20 mA, 10 mA for safety
+
+- Forward voltage
+•	Red LED value = 1.8 V
+•	Green LED value = 3 V
+•	Blue LED value = 3 V
+
+2. Deep dive: Calculating a current limiting resistor
+Example:
+•	Red LED, digitalWrite, mode OUTPUT, set value to HIGH
+•	Pin 2 produces 5V max
+•	Red LED voltage drop is 1.8 V
+•	LED current is 10 mA
+•	Desired resistor = (5V - 1.8V)/10mA = 320 Ohm, closest available is 330 Ohm
+
+3. Wire an LED to Arduino
+4. Code to blink an LED
+5. Example: Wiring a digital traffic signal
+6. Example: Coding a digital traffic signal 
+
+D. Interface with Input(Pushbutton)
+1. Pushbutton
+a. Electrical component that connects two points in a circuit when pressed
+b. Momentary Pushbutton
+c. Maintained Pushbutton
+d. Normally Open
+e. Normally Closed
+
+2. Active low, active high
+a. Active low/Pull up circuit
+When the switch or button is activated, it sends a low signal.
+- 5V to resistor
+- resistor to Pushbutton
+- Pushbutton to ground
+- pin 10 mode is INPUT
+
+b. Active High/Pull down circuit
+when the switch or button is activated, it sends a high signal.
+- 5V to pushbutton
+- Pushbutton to resistor
+- Resistor to ground
+- pin 10 mode is INPUT
+
+3. Wire a pushbutton to Arduino
+4. Code for the pushbutton
+5. Activate an LED with pushbutton
+6. Using the built-in LED with INPUT_PULLUP

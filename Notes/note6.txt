@@ -1,0 +1,44 @@
+Arduino 6: C Programming for Embedded Applications
+ 
+
+A. Embedded Systems 
+1. Applications: OS vs. embedded 
+2. Memory
+3. Storage 
+4. Energy consumption 
+5. Processing power 
+6. Hardware awareness 
+7. C vs. Embedded C 
+
+B. Data Types
+1. Integral types 
+2. Floating-point types 
+3. A quick analysis of memory usage with Keil 
+4. Checking memory usage with Arduino 
+
+C. Bit Manipulation 
+1. Masking 
+2. Bit masking with Arduino 
+3. Bit fields 
+4. A bit field example with Keil 
+
+
+D. Qualifier  
+1. The volatile qualifier 
+2. The const qualifier 
+3. Protect variables using volatile  
+4. Don't let the optimizer remove your while loop  
+
+
+E. Function Alternatives   
+1. Lookup tables
+2. Macro functions 
+3. Inline functions 
+4. LUT vs. functions example in Arduino  
+5. LUT vs. functions example in Keil  
+
+F. Floating-Point Unit Alternatives  
+1. Software implementation of float 
+2. Fixed-point math 
+3. Float-point vs. fixed-point example
+4. Float-point vs. fixed-point example in Keil
